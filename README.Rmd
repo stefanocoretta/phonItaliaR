@@ -27,7 +27,7 @@ This package provides the user with the `phonitalia` data frame, which contains 
 You can install phonItaliaR like so:
 
 ``` r
-remotes::install_github("stefanocoretta/phoneItaliaR")
+remotes::install_github("stefanocoretta/phonItaliaR")
 ```
 
 Then:
