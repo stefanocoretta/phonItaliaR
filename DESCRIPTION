@@ -1,0 +1,25 @@
+Package: phonItaliaR
+Type: Package
+Title: Data Package of the PhonItalia 1.10 Corpus
+Version: 1.0.0
+Date: 2024-02-25
+Authors@R: 
+    c(person(given = "Stefano",
+           family = "Coretta",
+           role = c("aut", "cre"),
+           email = paste0("stefano.coretta", "@", "gmail.com"),
+           comment = c(ORCID = "0000-0001-9627-5532")),
+      person(given = "Jeremy", family = "Goslin", role = "cph"),
+      person(given = "Claudia", family = "Galuzzi", role = "cph"),
+      person(given = "Cristina", family = "Romani", role = "cph"))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: false
+Depends: 
+    R (>= 2.10)
+Suggests:
+    tidyverse
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1

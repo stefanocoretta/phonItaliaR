@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# phonItaliaR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This package provides the user with the `phonitalia` data frame, which contains the data of the PhonItalia 1.10 Corpus.
+
+> Goslin, J., Galluzzi, C. & Romani, C. PhonItalia: a phonological lexicon for Italian. Behav Res 46, 872–886 (2014). https://doi.org/10.3758/s13428-013-0400-8
+
+## Installation
+
+You can install phonItaliaR like so:
+
+``` r
+remotes::install_github("stefanocoretta/phoneItaliaR")
+```
+
+Then:
+
+```{r packages, message=FALSE}
+library(tidyverse)
+library(phonItaliaR)
+```
+
+```{r phonitalia}
+data("phonitalia")
+phonitalia
+```
+
+Check the documentation of the data with `?phonitalia`.

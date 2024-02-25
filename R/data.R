@@ -1,0 +1,71 @@
+#' phonItalia: A phonological lexicon for Italian
+#'
+#' @docType data
+#' @format A tibble with 120,000 observations and 61 variables.
+#' \describe{
+#' \item{PhonesIPA}{IPA transcription of the word.}
+#' \item{PhonesIPA_gem}{Same as `PhoneIPA` but geminates are represented with `ː`.}
+#' \item{PhoneSyllIPA}{Same as `PhoneIPA` but with syllable boundaries marked with `.`.}
+#' \item{wordSpell}{Standard spelling of the word.}
+#' \item{nLem}{The associated lemma index number assigned to each of the Colfis word forms. This number can be used to match the wordform with the lemma in the Colfis lemma database.}
+#' \item{fqTot}{Total absolute frequency of the word form.}
+#' \item{fqTotL}{Total log frequency of the word form.}
+#' \item{fqQuo}{Absolute frequency from newspapers.}
+#' \item{fqPer}{Absolute frequency from periodical magazines.}
+#' \item{fqLib}{Absolute frequency from books.}
+#' \item{dispT}{Dispersion of total frequency.}
+#' \item{dispQ}{Dispersion of frequency from newspapers.}
+#' \item{dispP}{Dispersion of frequency from periodical magazines.}
+#' \item{dispL}{Dispersion of frequency from books.}
+#' \item{fqRelT}{Relative total frequency.}
+#' \item{fqRelQ}{Relative frequency from newspapers.}
+#' \item{fqRelP}{Relative frequency from periodical magazines.}
+#' \item{fqRelL}{Relative frequency from books.}
+#' \item{rango}{Word form index number from Colfis.}
+#' \item{lung}{Number of characters in orthographic word form `word` excluding `'`.}
+#' \item{gramCat}{Grammatical category with the following classifications: `B` Adverb, `C` Conjunction, `E` Noun, `G` Adjective, `I` Interjection, `N` Pronoun, `P` Preposition, `K` Punctuation, `R` Article, `S` Substantive, `V` Verb, `X` Not identified, `Z` Symbol, `NU` Numeral, `TC` Composed verb, `VA` Auxilliary verb, `U` unknown, `@` syntagmatic word (used in combination with another code, for example `S IN E@`, would be a noun in a syntagmatic word).}
+#' \item{lemma}{Orthographic representation of lemma associated with the word form.}
+#' \item{word}{Orthographic word form.}
+#' \item{Phones}{The phonological representation of the word form.}
+#' \item{PhoneSyll}{Phonological representation of the word form with syllable boundaries `.`.}
+#' \item{checked}{Word-forms with changes from previous version: `1,2` No change to this word-form from version 1.01 to 1.10, `11,12,111,112` change made to syllable stress position, `101,102,111,112` change made to phonemic representation.}
+#' \item{NumLetters}{Number of letters in the word.}
+#' \item{NumPhones}{Number of phones in the word.}
+#' \item{SumSylls}{Number of syllables in the word.}
+#' \item{StressedSyllable}{Numeric index of the stressed syllable.}
+#' \item{OrthVCV}{The consonant vowel structure of the orthographic representation of the word.}
+#' \item{PhonVCV}{Consonant vowel structure of the phonological representation of the word.}
+#' \item{OrthUniq}{Orthographic uniqueness point.}
+#' \item{PhonUniq}{Phonological uniqueness point.}
+#' \item{OrthUniqM1}{Orthographic uniqueness point minus one.}
+#' \item{PhonUniqM1}{Phonological uniqueness point minus one.}
+#' \item{NumHomographs}{Number of homographs.}
+#' \item{NumHomophones}{Number of homophones.}
+#' \item{Orth_N}{Size of the orthographic neighbourhood.}
+#' \item{Orth_N_MFreq}{Mean log frequency of the orthographic neighbourhood.}
+#' \item{Orth_N_G}{Number of orthographic neighbours with a higher frequency thanthe word.}
+#' \item{Orth_N_L}{Number of orthographic neighbours with a lower frequency than the word.}
+#' \item{Orth_N_G_MFreq}{Mean log frequency of the orthographic neighbours with a lower frequency than the word.}
+#' \item{Orth_N_L_MFreq}{Mean log frequency of the orthographic neighbours with a higher frequency than the word.}
+#' \item{Orth_N_RelFreq}{Relative log frequency of the current word and that of its orthographic neighbourhood.}
+#' \item{Phon_N}{Size of the phonological neighbourhood.}
+#' \item{Phon_N_MFreq}{Mean log frequency of the phonological neighbourhood.}
+#' \item{Phon_N_G}{Number of phonological neighbours with a higher frequency than the word.}
+#' \item{Phon_N_L}{Number of phonological neighbours with a lower frequency than the word.}
+#' \item{Phon_N_G_MFreq}{Mean log frequency of the phonological neighb ours with a lower frequency than the word.}
+#' \item{Phon_N_L_MFreq}{Mean log frequency of the phonological neighbours with a higher frequency than the word.}
+#' \item{Phon_N_RelFreq}{Relative log frequency of the current word and that of its phonological neighbourhood.}
+#' \item{OLD}{Orthographic Levenshtein Distance 20.}
+#' \item{OLDF}{Mean log frequency of words of the 20 words used to calculate the `OLD`.}
+#' \item{OLD_RelFreq}{Relative log frequency of the word and the 20 used to calculate the `OLD`.}
+#' \item{PLD}{Phonological Levenshtein Distance 20.}
+#' \item{PLDF}{Mean log frequency of words of the 20 words used to calculate the `PLD`.}
+#' \item{PLD_RelFreq}{Relative log frequency of the word and the 20 used to calculate the `PLD`.}
+#' \item{BG_Sum}{?}
+#' \item{BG_Mean}{?}
+#' \item{BP_Sum}{?}
+#' \item{BP_Mean}{?}
+#' }
+#' @source <https://doi.org/10.3758/s13428-013-0400-8>
+#' @usage data(phonitalia)
+"phonitalia"
