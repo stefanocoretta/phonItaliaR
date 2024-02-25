@@ -10,6 +10,8 @@ A tibble with 120,000 observations and 61 variables.
 \item{PhonesIPA}{IPA transcription of the word.}
 \item{PhonesIPA_gem}{Same as \code{PhoneIPA} but geminates are represented with \code{ː}.}
 \item{PhoneSyllIPA}{Same as \code{PhoneIPA} but with syllable boundaries marked with \code{.}.}
+\itme{PhonesToken}{Tokenised \code{PhonesIPA}. Phones are separated by a space.}
+\itme{PhonesToken_gem}{Same as \code{PhoneToken} but with \code{PhonesIPA_gem}.}
 \item{wordSpell}{Standard spelling of the word.}
 \item{nLem}{The associated lemma index number assigned to each of the Colfis word forms. This number can be used to match the wordform with the lemma in the Colfis lemma database.}
 \item{fqTot}{Total absolute frequency of the word form.}
