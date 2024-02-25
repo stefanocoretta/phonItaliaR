@@ -52,7 +52,17 @@ phonitalia_dict <- phonitalia |>
   select(wordSpell, PhonesToken_gem) |>
   distinct() |>
   filter(str_detect(wordSpell, "'[^$]", negate = TRUE)) |>
-  mutate(wordSpell = str_replace(wordSpell, "'", "")) |>
+  mutate(
+    wordSpell = str_replace(wordSpell, "'", ""),
+    # /s/ voicing before voiced consonants
+    PhonesToken_gem = str_replace_all(PhonesToken_gem, "s ([bdɡmnlrjw])", "z \\1"),
+    # /s/ voicing between vowels
+    PhonesToken_gem = str_replace_all(PhonesToken_gem, "([aeɛɔou]) s ([aeɛɔou])", "\\1 z \\2"),
+    # /n/ velarisation before velars
+    PhonesToken_gem = str_replace_all(PhonesToken_gem, "n ([kɡ])", "ŋ \\1"),
+    # /n/ palatalisation before palatals
+    PhonesToken_gem = str_replace_all(PhonesToken_gem, "n ((ʃ|tʃ|dʒ))", "ɲ \\1")
+  ) |>
   bind_rows(dict_extra) |>
   arrange(wordSpell)
 

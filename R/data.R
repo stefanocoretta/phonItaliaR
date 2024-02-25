@@ -6,8 +6,8 @@
 #' \item{PhonesIPA}{IPA transcription of the word.}
 #' \item{PhonesIPA_gem}{Same as `PhoneIPA` but geminates are represented with `ː`.}
 #' \item{PhoneSyllIPA}{Same as `PhoneIPA` but with syllable boundaries marked with `.`.}
-#' \itme{PhonesToken}{Tokenised `PhonesIPA`. Phones are separated by a space.}
-#' \itme{PhonesToken_gem}{Same as `PhoneToken` but with `PhonesIPA_gem`.}
+#' \item{PhonesToken}{Tokenised `PhonesIPA`. Phones are separated by a space.}
+#' \item{PhonesToken_gem}{Same as `PhoneToken` but with `PhonesIPA_gem`.}
 #' \item{wordSpell}{Standard spelling of the word.}
 #' \item{nLem}{The associated lemma index number assigned to each of the Colfis word forms. This number can be used to match the wordform with the lemma in the Colfis lemma database.}
 #' \item{fqTot}{Total absolute frequency of the word form.}
