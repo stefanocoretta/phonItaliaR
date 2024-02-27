@@ -44,8 +44,8 @@ phonitalia <- read_tsv(
 usethis::use_data(phonitalia, overwrite = TRUE)
 
 dict_extra <- tibble(
-  wordSpell = c("l", "gl", "dell", "dall"),
-  PhonesToken_gem = c("l", "ʎ", "d e lː", "d a lː")
+  wordSpell = c("l'", "gl'", "dell'", "dall'", "un'"),
+  PhonesToken_gem = c("l", "ʎ", "d e lː", "d a lː", "u n")
 )
 
 phonitalia_dict <- phonitalia |>
