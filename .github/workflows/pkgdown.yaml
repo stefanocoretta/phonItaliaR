@@ -32,7 +32,7 @@ jobs:
           use-public-rspm: true
 
       - name: Install non-CRAN dependency
-        run: Rscript -e 'install.packages("remotes"); remotes::install_github("stefanocoretta/phonetisr")'
+        run: Rscript -e 'install.packages("pak"); pak::pak("stefanocoretta/phonetisr")'
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
