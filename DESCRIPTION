@@ -12,8 +12,10 @@ Authors@R:
       person(given = "Jeremy", family = "Goslin", role = "cph"),
       person(given = "Claudia", family = "Galuzzi", role = "cph"),
       person(given = "Cristina", family = "Romani", role = "cph"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: It provides users with the annotated lexical data from the
+    PhonItalia 1.10 Corpus. The Corpus is annotated with phonological information
+    like syllabic parsing, stress and frequency information. The data in this package
+    also contains a phonetic transcription of each word.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: false
@@ -23,4 +25,4 @@ Suggests:
     phonetisr,
     tidyverse
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2

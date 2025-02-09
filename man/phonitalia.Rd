@@ -8,8 +8,8 @@
 A tibble with 120,000 observations and 61 variables.
 \describe{
 \item{PhonesIPA}{IPA transcription of the word.}
-\item{PhonesIPA_gem}{Same as \code{PhoneIPA} but geminates are represented with \code{ː}.}
-\item{PhoneSyllIPA}{Same as \code{PhoneIPA} but with syllable boundaries marked with \code{.}.}
+\item{PhonesIPA_gem}{Same as \code{PhoneIPA} but geminates are represented with <ː>.}
+\item{PhoneSyllIPA}{Same as \code{PhoneIPA} but with syllable boundaries marked with <.>.}
 \item{PhonesToken}{Tokenised \code{PhonesIPA}. Phones are separated by a space.}
 \item{PhonesToken_gem}{Same as \code{PhoneToken} but with \code{PhonesIPA_gem}.}
 \item{wordSpell}{Standard spelling of the word.}
@@ -74,12 +74,22 @@ A tibble with 120,000 observations and 61 variables.
 }
 }
 \source{
-\url{https://doi.org/10.3758/s13428-013-0400-8}
+Goslin, J., Galluzzi, C. & Romani, C. PhonItalia: a phonological lexicon for Italian. Behav Res 46, 872–886 (2014). \url{https://doi.org/10.3758/s13428-013-0400-8}
 }
 \usage{
 data(phonitalia)
 }
 \description{
-phonItalia: A phonological lexicon for Italian
+It provides users with the annotated lexical data from the PhonItalia 1.10
+Corpus. The Corpus is annotated with phonological information like syllabic
+parsing, stress and frequency information. Phonemic transcriptions have been
+added by Stefano Coretta (see details below).
+}
+\details{
+The data in this package has been enhanced with phonemic transcriptions of
+each word. The following types of transcriptions have been added:
+transcription with geminates spelled as doubled singletons, transcription
+with geminates spelled with "ː", transcription with syllable boundaries, and
+transcription with phones separated by spaces (tokenised).
 }
 \keyword{datasets}

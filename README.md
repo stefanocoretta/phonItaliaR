@@ -4,10 +4,12 @@
 # phonItaliaR
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 This package provides the user with the `phonitalia` data frame, which
-contains the data of the PhonItalia 1.10 Corpus.
+contains the data of the PhonItalia 1.10 Corpus, with additional
+phonemic trasncriptions added by Stefano Coretta.
 
 > Goslin, J., Galluzzi, C. & Romani, C. PhonItalia: a phonological
 > lexicon for Italian. Behav Res 46, 872–886 (2014).
