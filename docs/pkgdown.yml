@@ -1,0 +1,8 @@
+pandoc: 3.6.2
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles: {}
+last_built: 2025-02-09T10:34Z
+urls:
+  reference: https://stefanocoretta.github.io/phonItaliaR/reference
+  article: https://stefanocoretta.github.io/phonItaliaR/articles
