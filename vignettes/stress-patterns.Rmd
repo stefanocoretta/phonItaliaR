@@ -1,0 +1,53 @@
+---
+title: "Lexical stress patterns in Italian"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{stress-patterns}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tidyverse)
+library(phonItaliaR)
+data("phonitalia")
+```
+
+```{r}
+lemmas <- phonitalia |>
+  distinct(lemma, gramCat, SumSylls, StressedSyllable) |> 
+  mutate(
+    stress = StressedSyllable - SumSylls
+  )
+```
+
+```{r}
+table(lemmas$SumSylls, lemmas$StressedSyllable)
+```
+
+```{r}
+lemmas |> 
+  count(stress)
+```
+
+```{r}
+lemmas |> 
+  ggplot(aes(stress)) +
+  geom_bar()
+```
+
+```{r}
+lemmas |> 
+  filter(gramCat %in% c("G", "S", "V")) |> 
+  ggplot(aes(gramCat, fill = as.factor(stress))) +
+  geom_bar(position = "fill")
+```
+
+
